@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import ChatListItem from './ChatListItem';
+import ChatListItem from '../component/ChatListItem';
+import { chatItems } from '../data/chatitems';
 
 const ChatList = () => {
-  const [chats, setChats] = useState(initialChats);
+  const [chats, setChats] = useState(chatItems);
 
   const handleChatClick = (chatId) => {
     
